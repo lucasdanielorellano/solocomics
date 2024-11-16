@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+.header {
+    font-family: "Bangers", sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1015;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    text-shadow: 1px 1px 0px #af1414;
+    gap: 20px;
+
+}
+
+.header img {
+    width: 80px;
+    filter: none;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* Títulos */
+.COMICTitle, h1, h2, h3 {
+    font-family: "Bangers", sans-serif;
+    color: #FF6347;
+    text-shadow: 2px 2px 0px #FFD700;
+    text-align: center;
+    
+}
+
+/* Galería de Colecciones */
+.comicCollections {
+    background-image: url("../assets/img/imagen_principal_index.jpg"); /* Ruta de la imagen */
+    background-size: cover;         /* La imagen cubrirá toda el área */
+    background-position: center;    /* Centra la imagen */
+    background-repeat: no-repeat;   /* Evita que la imagen se repita */
+    color: black;                   /* Cambia el color del texto */
+    padding: 90px;                  /* Añade espacio interno */
+    text-align: center;             /* Centra el texto */
+    position: relative;             /* Mantiene el fondo en el área de la sección */
+}
+
+/* Nosotros*/
+.nosotrosCollections {
+    background-image: url("../assets/img/thanos.webp"); /* Ruta de la imagen */
+    background-size: cover;         /* La imagen cubrirá toda el área */
+    background-position: center;    /* Centra la imagen */
+    background-repeat: no-repeat;   /* Evita que la imagen se repita */
+    color: black;                   /* Cambia el color del texto */
+    padding: 90px;                  /* Añade espacio interno */
+    text-align: center;             /* Centra el texto */
+    position: relative;             /* Mantiene el fondo en el área de la sección */
+}
+
+
+.comicCollections h1, .comicCollectionsh2, .comicCollections h3 {
+    background: transparent;               /* Quita cualquier fondo blanco */
+    color: inherit;                 /* Hereda el color blanco de la sección */
+    margin-bottom: 20px;            /* Espaciado entre títulos */
+}
+
+/* Galería de Imágenes */
+.comicGallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.comicGalleryItem {
+    border: 4px solid #FF6347;
+    box-shadow: 5px 5px 0px #FFD700;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+.comicGalleryItem  img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.comicGalleryItem:hover {
+    transform: scale(1.1);
+}
+
+/* Secciones de Colección */
+.collection1 {
+    background: linear-gradient(71deg, #FF4500 0%, #1E90FF 80%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.collection2 {
+    background: linear-gradient(46deg, #FFD700 0%, #8B0000 80%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.collection3 {
+    background: linear-gradient(103deg, #228B22 0%, #000000 80%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    font-family: "Bangers", sans-serif;
+    background-color: #3333cc;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px #000000;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.address {
+    color: lightgray;
+    font-size: 1rem;
+}
+
+.fa-whatsapp{
+    font-size: 5em;
+    color:rgb(44, 181, 44);
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+/* Botón de estilo cómic */
+button {
+    font-family: "Bangers", sans-serif;
+    background-color: #FF6347;
+    color: #FFFFFF;
+    border: 2px solid #3333cc;
+    box-shadow: 3px 3px 0px #FFD700;
+    padding: 10px 20px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 0px #3333cc;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .comicGallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.principalContacto h1 {
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.h1Subtitulo {
+    font-size: 2rem;
+    color: #ffffff34;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-top: 10px;
+}
+
+.formularioContactoYMapa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    
+    color: white;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    p {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    label {
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        width: 50%;
+    }
+    input{
+        width: 50%;
+    }
+
+
+}
+
+/*Estilos para la página Contacto tanto para el formulario como para el mapa*/
+.formularioContactoYMapa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #222222;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        button{
+            display:inline-block;
+            color: #ffffff;
+            background-color: black;
+            font-size: 1em;
+            border:2px solid #ffffff;
+            padding:10px;
+            border-radius:5px;
+            box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
+        }
+        button:hover{
+            background-color: #c3bfbf;
+            color: black;
+        }
+    }
+    iframe {
+        border: none;
+        width: 100%;
+
+        border-radius: 8px;
+    }
+}
+
+/*Media Querie para Seccion Contacto de la página contacto.html pantallas inferiores a 768px*/
+@media (max-width: 768px) {
+    .formularioContactoYMapa {
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .formularioContactoYMapa form,
+    .formularioContactoYMapa iframe {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+
+
+.principalContacto h1 {
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.h1Subtitulo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-top: 5px;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.video-background2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 93%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.MarvelCollections {
+
+    color: black;
+    padding: 90px;
+    text-align: center;
+    position: relative;
+}
+
+.MarvelCollectionsTitle {
+    font-family: "Bangers", sans-serif;
+    color: #FF6347;
+    text-shadow: 2px 2px 0px #FFD700;
+    margin-bottom: 20px;
+}
+
+.MarvelCollectionsGallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.MarvelCollectionsGalleryItem {
+    border: 4px solid #FF6347;
+    box-shadow: 5px 5px 0px #FFD700;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    width: 200px;
+}
+
+.MarvelCollectionsGalleryItem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.MarvelCollectionsTitleItem {
+    font-family: "Bangers", sans-serif;
+    font-size: 1.2rem;
+    color: #FF6347;
+    margin: 10px 0 5px;
+}
+
+.MarvelCollectionsPrice {
+    font-size: 1rem;
+    color: #228B22;
+    font-weight: bold;
+}
+
+.MarvelCollectionsGalleryItem:hover {
+    transform: scale(1.1);
+}
+
+
+.productSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.productCard {
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+.productCard img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.productCard h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.productCard:hover {
+    transform: scale(1.05);
+}
+
+.DCCollections {
+ 
+    color: black;
+    padding: 90px;
+    text-align: center;
+    position: relative;
+}
+
+.DCCollectionsTitle {
+    font-family: "Bangers", sans-serif;
+    color: #1E90FF;
+    text-shadow: 2px 2px 0px #FFD700;
+    margin-bottom: 20px;
+}
+
+.DCCollectionsGallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.DCCollectionsGalleryItem {
+    border: 4px solid #1E90FF;
+    box-shadow: 5px 5px 0px #FFD700;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    width: 200px;
+}
+
+.DCCollectionsGalleryItem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.DCCollectionsTitleItem {
+    font-family: "Bangers", sans-serif;
+    font-size: 1.2rem;
+    color: #1E90FF;
+    margin: 10px 0 5px;
+}
+
+.DCCollectionsPrice {
+    font-size: 1rem;
+    color: #228B22;
+    font-weight: bold;
+}
+
+.DCCollectionsGalleryItem:hover {
+    transform: scale(1.1);
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .productSection {
+        flex-direction: column;
+        align-items: center;
+    }
+}
